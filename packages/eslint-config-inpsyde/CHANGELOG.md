@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0
+
+- Dependencies: Update ESLint to 4.3.x.
+- Adapt rules to ESLint 4.3.x.
+- Improve `multiline-ternary` configuration by using `always-multiline` option.
+- Improve `object-curly-newline` configuration by using `consistent` option.
+
 ## 1.9.0
 
 - Dependencies: Update ESLint to 3.17.x.

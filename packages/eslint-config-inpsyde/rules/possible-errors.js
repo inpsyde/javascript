@@ -1,5 +1,7 @@
 module.exports = {
 	rules: {
+		'for-direction': 2,
+		'getter-return': 2,
 		'no-await-in-loop': 1,
 		'no-compare-neg-zero': 2,
 		'no-cond-assign': [ 2, 'always' ],

@@ -1,6 +1,8 @@
 module.exports = {
 	rules: {
+		'array-bracket-newline': 0,
 		'array-bracket-spacing': 0,
+		'array-element-newline': 0,
 		'block-spacing': 2,
 		'brace-style': 2,
 		'camelcase': [ 2, {
@@ -38,7 +40,6 @@ module.exports = {
 			allowObjectStart: true,
 			allowArrayStart: true
 		} ],
-		'lines-around-directive': 2,
 		'max-depth': 1,
 		'max-len': [ 2, {
 			code: 120,
@@ -56,11 +57,9 @@ module.exports = {
 		'max-params': [ 1, 4 ],
 		'max-statements': [ 1, 12 ],
 		'max-statements-per-line': 1,
-		'multiline-ternary': 0,
+		'multiline-ternary': [ 2, 'always-multiline' ],
 		'new-cap': 2,
 		'new-parens': 2,
-		'newline-after-var': 0,
-		'newline-before-return': 2,
 		'newline-per-chained-call': 0,
 		'no-array-constructor': 2,
 		'no-bitwise': 2,
@@ -94,9 +93,10 @@ module.exports = {
 		'no-unneeded-ternary': 2,
 		'no-whitespace-before-property': 2,
 		'nonblock-statement-body-position': [ 2, 'below' ],
-
-		// TODO: Enable as soon as https://github.com/eslint/eslint/issues/6488 has been fixed.
-		'object-curly-newline': 0,
+		'object-curly-newline': [ 2, {
+			multiline: true,
+			consistent: true
+		} ],
 		'object-curly-spacing': [ 2, 'always' ],
 		'object-property-newline': 2,
 		'one-var': [ 2, 'never' ],
@@ -104,6 +104,19 @@ module.exports = {
 		'operator-assignment': 2,
 		'operator-linebreak': [ 2, 'before' ],
 		'padded-blocks': [ 2, 'never' ],
+		'padding-line-between-statements': [ 2, {
+			blankLine: 'always',
+			prev: 'directive',
+			next: '*'
+		}, {
+			blankLine: 'any',
+			prev: 'directive',
+			next: 'directive'
+		}, {
+			blankLine: 'always',
+			prev: '*',
+			next: 'return'
+		} ],
 		'quote-props': [ 2, 'as-needed' ],
 		'quotes': [ 2, 'single', {
 			avoidEscape: true,
@@ -118,6 +131,7 @@ module.exports = {
 		} ],
 		'semi': 2,
 		'semi-spacing': 2,
+		'semi-style': 0,
 		'sort-keys': 0,
 		'sort-vars': 0,
 		'space-before-blocks': 2,
@@ -135,6 +149,7 @@ module.exports = {
 		'spaced-comment': [ 2, 'always', {
 			exceptions: [ '+', '-', '*', '/' ]
 		} ],
+		'switch-colon-spacing': 2,
 		'unicode-bom': 2,
 		'wrap-regex': 0
 	}

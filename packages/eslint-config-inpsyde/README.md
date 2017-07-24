@@ -10,6 +10,12 @@
 
 ## Installation
 
+Install via [Yarn](https://yarnpkg.com):
+
+```sh
+yarn add --dev eslint-config-inpsyde eslint
+```
+
 Install via npm:
 
 ```sh
