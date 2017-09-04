@@ -21,6 +21,7 @@ module.exports = {
 		'func-style': [ 2, 'declaration', {
 			allowArrowFunctions: true
 		} ],
+		'function-paren-newline': [ 2, 'multiline' ],
 		'id-blacklist': 0,
 		'id-length': 0,
 		'id-match': 0,

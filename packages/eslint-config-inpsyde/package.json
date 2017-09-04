@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-inpsyde",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Shareable ESLint config, following the Inpsyde JavaScript Style Guide.",
   "keywords": [
     "check",
@@ -55,7 +55,7 @@
     "test": "jsonlint .eslintrc && jsonlint package.json && eslint ."
   },
   "devDependencies": {
-    "eslint": "^4.3.0",
+    "eslint": "^4.6.0",
     "jsonlint": "^1.6.0"
   },
   "peerDependencies": {
