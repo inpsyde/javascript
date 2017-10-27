@@ -37,10 +37,12 @@ module.exports = {
 		'linebreak-style': 2,
 		'lines-around-comment': [ 2, {
 			beforeLineComment: true,
+			allowArrayStart: true,
 			allowBlockStart: true,
-			allowObjectStart: true,
-			allowArrayStart: true
+			allowClassStart: true,
+			allowObjectStart: true
 		} ],
+		'lines-between-class-members': 2,
 		'max-depth': 1,
 		'max-len': [ 2, {
 			code: 120,
@@ -58,6 +60,7 @@ module.exports = {
 		'max-params': [ 1, 4 ],
 		'max-statements': [ 1, 12 ],
 		'max-statements-per-line': 1,
+		'multiline-comment-style': [ 1, 'starred-block' ],
 		'multiline-ternary': [ 2, 'always-multiline' ],
 		'new-cap': 2,
 		'new-parens': 2,
